@@ -6,6 +6,7 @@ import { FaExclamationCircle,FaArrowRight } from 'react-icons/fa';
 import Footer from "./Footer"
 import Courses from "./Courses";
 import IslamicCTA from "./IslamCta";
+import {Link} from "react-router-dom"
 const Home = () => {
   const images = [
     {
@@ -105,12 +106,13 @@ const Home = () => {
           {image.description}
         </p>
 
+<Link to="/contact">
         {/* Elegant Button */}
-        <button className="group relative overflow-hidden bg-gradient-to-r from-[#c3a45d] to-[#d4b76e] text-white px-10 py-4 rounded-lg font-medium text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#c3a45d]/20">
+        <button className="group relative overflow-hidden bg-gradient-to-r from-[#c3a45d] to-[#d4b76e] hover:cursor-pointer text-white px-10 py-4 rounded-lg font-medium text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#c3a45d]/20">
           <span className="relative z-10">Find the Courses</span>
           <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-white opacity-20 group-hover:animate-shine" />
         </button>
-
+        </Link>
         {/* Simple Bottom Divider */}
         <div className="flex justify-center items-center mt-8">
           <div className="w-20 h-[1px] bg-[#c3a45d]/50"></div>

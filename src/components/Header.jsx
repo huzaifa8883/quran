@@ -230,7 +230,7 @@ const Header = () => {
 
             {/* Navigation Links with Better Contrast */}
             <nav className="hidden xl:flex items-center space-x-8">
-              {["Home", "About Us", "Courses", "Services", "Blog", "Contact"].map((item) => (
+              {["Home", "About Us", "Courses", "Contact"].map((item) => (
                 <Link
                   key={item}
                   to={`/${item.toLowerCase().replace(' ', '-')}`}
@@ -307,7 +307,7 @@ const Header = () => {
             </div>
 
             <nav className="flex flex-col space-y-2">
-              {["Home", "About Us", "Courses", "Services", "Blog", "Contact"].map((item) => (
+              {["Home", "About Us", "Courses", "Contact"].map((item) => (
                 <Link
                   key={item}
                   to={`/${item.toLowerCase().replace(' ', '-')}`}

@@ -8,27 +8,27 @@ const WhatWeOffer = () => {
 
   const offerings = [
     {
-      title: "Online Quran Classes",
+      title: "Children's Quran Learning Program",
       subtitle: "تعليم القرآن",
-      description: "Expert-led Qur'an memorization and tajweed classes with personalized attention and flexible scheduling.",
+      description: "A fun and engaging Quran learning experience tailored for kids, with interactive activities and a personalized teaching approach.",
       icon: <FaQuran className="text-4xl" />,
       image: "https://cdn.pixabay.com/photo/2016/03/27/18/31/book-1283468_1280.jpg",
       benefits: ["One-to-One Sessions", "Certified Teachers", "Flexible Timing"],
       color: "emerald"
     },
     {
-      title: "Tafseer Course",
+      title: "Ladies' Tajweed Masterclass",
       subtitle: "دورة التفسير",
-      description: "Deep understanding of Quranic verses through comprehensive tafseer studies and scholarly discussions.",
+      description: "Improve your Quranic recitation with my specialized Tajweed course, designed exclusively for sisters to refine their pronunciation and fluency.",
       icon: <FaChalkboardTeacher className="text-4xl" />,
       image: "https://cdn.pixabay.com/photo/2021/12/11/09/19/quran-6862296_960_720.jpg",
       benefits: ["Detailed Analysis", "Weekly Classes", "Study Materials"],
       color: "blue"
     },
     {
-      title: "Islamic Studies",
-      subtitle: "الدراسات الإسلامية",
-      description: "Comprehensive Islamic education covering Fiqh, Hadith, and character development.",
+      title: "Beginner Urdu for Children's Sisters",
+      subtitle: "اردو سیکھیں",
+      description: "Learn Urdu from scratch with my structured, Children's and  ladies-only course, covering reading, writing, and basic conversation skills.",
       icon: <FaMosque className="text-4xl" />,
       image: "https://cdn.pixabay.com/photo/2019/04/01/14/14/quran-4095475_1280.jpg",
       benefits: ["Structured Curriculum", "Expert Guidance", "Regular Assessment"],
@@ -87,7 +87,7 @@ const WhatWeOffer = () => {
               </div>
 
               <div className="p-8">
-                <div className={`flex items-center justify-center w-16 h-16 bg-gradient-to-br from-${offering.color}-500 to-${offering.color}-600 rounded-full -mt-16 mb-6 shadow-lg text-white ring-4 ring-black/5`}>
+                <div className={`flex items-center justify-center w-16 h-16 bg-gradient-to-br from-${offering.color}-500 to-${offering.color}-600 rounded-full  mb-6 shadow-lg text-white ring-4 ring-black/5`}>
                   {offering.icon}
                 </div>
 

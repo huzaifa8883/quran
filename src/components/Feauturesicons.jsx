@@ -2,35 +2,36 @@ import React from "react";
 import { IoSchoolOutline, IoEarthOutline, IoPeopleOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { FaQuran, FaStar, FaClock } from 'react-icons/fa';
-
+import { Link } from "react-router-dom";
 const FeaturesWithIcons = () => {
   const features = [
     {
       icon: <IoSchoolOutline className="text-6xl" />,
-      text: "Learn Quick Quran Classes",
-      description: "Master Quran recitation with expert teachers",
-      stats: "1000+ Students",
-      benefits: ["Expert Teachers", "Flexible Timings", "Personal Attention"],
+      text: "Learn Quran Recitation with Teacher's Guidance",
+      description: "Receive personalized recitation lessons directly from your teacher.",
+      stats: "50+ Students Taught",
+      benefits: ["Expert Teacher", "One-on-One Attention", "Flexible Timing"],
       color: "text-emerald-600",
       bgColor: "bg-emerald-50",
       hoverBg: "hover:bg-emerald-600",
     },
     {
       icon: <IoEarthOutline className="text-6xl" />,
-      text: "Online Arabic Classes",
-      description: "Learn Arabic from native speakers",
-      stats: "500+ Active Learners",
-      benefits: ["Native Speakers", "Modern Methods", "Practice Sessions"],
+      text: "Urdu Language Classes with Native Teacher",
+      description: "Learn Urdu directly from a teacher who is a native speaker.",
+      stats: "100+ Active Learners",
+      benefits: ["Native Speaker", "Custom Teaching Methods", "Interactive Lessons"],
       color: "text-blue-600",
       bgColor: "bg-blue-50",
       hoverBg: "hover:bg-blue-600",
     },
+    
     {
       icon: <IoPeopleOutline className="text-6xl" />,
-      text: "Classes for Kids",
-      description: "Interactive learning for children",
-      stats: "800+ Happy Parents",
-      benefits: ["Interactive Learning", "Fun Activities", "Regular Progress"],
+      text: "Personalized Classes for Kids",
+      description: "Engage your child with fun, interactive lessons tailored by your teacher.",
+      stats: "140+ Happy Parents",
+      benefits: ["Interactive Learning", "Teacher-Led Activities", "Progress Tracking"],
       color: "text-violet-600",
       bgColor: "bg-violet-50",
       hoverBg: "hover:bg-violet-600",
@@ -70,10 +71,10 @@ const FeaturesWithIcons = () => {
         <div className="text-center mb-16">
           <FaQuran className="text-6xl text-emerald-600 mx-auto mb-8 transform hover:scale-110 transition-transform duration-300" />
           <h2 className="text-4xl font-bold text-slate-800 mb-6 font-arabic">
-            Our Learning Programs
+            Teacher Learning Programs
           </h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
-            Embark on your journey of Islamic education with our comprehensive learning programs
+            Embark on your educational journey under the guidance of a dedicated teacher.
           </p>
         </div>
 
@@ -118,7 +119,7 @@ const FeaturesWithIcons = () => {
                 <FaClock className={`inline mr-2 ${feature.color}`} />
                 {feature.stats}
               </div>
-
+<Link to="/contact">
               <button className={`
                 w-full py-3 px-6 text-base font-semibold text-white
                 bg-slate-700 rounded-lg
@@ -129,6 +130,7 @@ const FeaturesWithIcons = () => {
               `}>
                 Start Learning
               </button>
+              </Link>
             </motion.div>
           ))}
         </div>

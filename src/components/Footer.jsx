@@ -58,7 +58,7 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-3">
-              {["About Us", "FAQ's", "Events", "Courses", "Blog", "Contact"].map((item, index) => (
+              {["About", , "Courses", "Contact","Home"].map((item, index) => (
                 <li key={index}>
                   <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 flex items-center group">
                     <FaArrowRight className="mr-2 text-xs opacity-0 group-hover:opacity-100 transition-all duration-300" />

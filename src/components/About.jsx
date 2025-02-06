@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import  { useState } from 'react';
 
 import { FaQuran,  FaAward, FaCertificate, FaStarHalf, FaLanguage, FaClock, FaGlobe, FaBookReader, FaHandHoldingHeart, FaQuoteRight, FaCalendarAlt, FaGlobeAmericas, FaUserGraduate, FaUsers, FaStar,FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-
+import Footer from "./Footer"
 const About = () => {
     const [activeTestimonialSet, setActiveTestimonialSet] = useState(0);
 
@@ -108,6 +108,7 @@ const About = () => {
   ];
 
   return (
+  <>
     <div className="bg-gradient-to-b from-gray-50 to-white">
       {/* Hero Section - Enhanced with parallax effect */}
       <section className="relative overflow-hidden min-h-screen flex items-center bg-emerald-900 text-white py-28">
@@ -508,6 +509,8 @@ const About = () => {
 
       {/* [Rest of the sections remain the same] */}
     </div>
+        <Footer/>
+        </>  
   );
 };
 
